@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&family=Roboto:wght@100;700&display=swap');
+
+*{   
+    background-color: lightskyblue;
+    font-family: 'Roboto'; 
+    
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;   
+
+}
+
+
+.container span {
+    font-variation-settings: 'weight' 100;
+    letter-spacing: 0;
+    color: rgba(3, 41, 33, 0.61);
+    font-size: 100px;
+    font-weight: 100;
+    
+}
+
+.container:hover span {
+    animation: letterWave 0.5s ease-in-out infinite alternate;
+    animation-delay: calc(var(--order) * 100ms);
+}
+@keyframes letterWave {
+    to {
+        font-variation-settings: 'weight' 700;
+        letter-spacing: -10px;
+        font-weight: 700;
+    }
+}
